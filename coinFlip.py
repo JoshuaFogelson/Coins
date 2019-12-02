@@ -105,9 +105,5 @@ coinFlipper(9,100)
 coinFlipper(9,1000)
 coinFlipper(9,1000000)
 
-coinFlipper(10,10)
-coinFlipper(10,100)
-coinFlipper(10,1000)
-coinFlipper(10,1000000)
 
 
