@@ -15,7 +15,8 @@ def coinFlipper(headProb,times):
         head = []
         tail = []
         for x in range(numCoins):
-            if random.randrange(9) >= headProb:
+            rando = random.randrange(10)
+            if  rando>= headProb:
                 head.append('x')
             else:
                 tail.append('x')
@@ -50,7 +51,7 @@ def coinFlipper(headProb,times):
     plt.xticks(index ,('0','1', '2', '3', '4','5','6','7','8','9','10'))
 
     plt.tight_layout()
-    fileTitle = str(headProb) +' '+ str(times)
+    fileTitle = str(10 - headProb) +' '+ str(times)
     plt.savefig(fileTitle)
     print(times)
 
@@ -104,6 +105,11 @@ coinFlipper(9,10)
 coinFlipper(9,100)
 coinFlipper(9,1000)
 coinFlipper(9,1000000)
+
+coinFlipper(10,10)
+coinFlipper(10,100)
+coinFlipper(10,1000)
+coinFlipper(10,1000000)
 
 
 
